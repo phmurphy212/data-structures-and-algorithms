@@ -134,12 +134,13 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  let reduced = str.reduce((acc, val) => 
-    acc.sort(function(a, b){
+  let reduced = str.reduce((acc, val) => {
+    acc.sort(function (a, b) {
       return b - a;
-    })
-      return reduced;
-    )};
+    });
+  });
+  return reduced;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
