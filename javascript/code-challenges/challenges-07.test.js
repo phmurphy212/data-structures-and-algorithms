@@ -121,11 +121,9 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  let indexes = recipe.ingredients.map((item) => item.lastIndexOf(' '));
-  for (let i = 0; i < indexes.length; i++){
-    let final = recipe.ingredients.map((item) => item.slice(indexes[i]));
-    result.push(final);
-  }
+  recipe.ingredients.forEach((rec) => {
+    result.push(rec.slice(rec.indexOf(' ', 3)+1));
+  });
   return result;
 };
 
