@@ -10,9 +10,6 @@ const longestString = (arr) => {
   let biggest = {highestIndex: -1, stringLength: 0};
   arr.forEach((str, index) => {
     (str.length > biggest.stringLength) ? biggest = {highestIndex: index, stringLength: str.length} : '';
-  });
-  return biggest.highestIndex;
-};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
